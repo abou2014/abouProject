@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    
+	<bean id="personneDAO" class="daoImp.PersonneImp">
+	</bean>
+
+	
+	<bean id="personne2" class="model.main.model.Personne">
+		<property name="nom" value="BOUBA4" />
+		<property name="prenom" value="Abou4" />
+	</bean>
+</beans>
